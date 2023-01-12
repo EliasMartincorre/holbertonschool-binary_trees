@@ -6,9 +6,13 @@
   */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-	int k = node->n;
+	int k;
+
 	if (node == NULL)
+	{
 		return (NULL);
+	}
+	k = node->n;
 
 	if (node->parent)
 	{
